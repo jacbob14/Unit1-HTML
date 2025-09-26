@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Contact Form</h1>
-    <form action="">
+    <form action="results.html" method="GET">
         <table>
             <!-- Basic text -->
             
@@ -43,6 +44,7 @@
                 <td><label for="Website">Website</label></td>
                 <td><input type="url" name="website" id="website"></td>
             </tr>
+
             <!-- Date and Time -->
              <tr>
                 <td><label for="Date">Date:</label></td>
@@ -64,16 +66,47 @@
              <tr>
                 <td>Grade:</td>
                 <td>
-                    <label><input type="radio" name="grade" value="grade">9th Grade</label>
-                    <label><input type="radio" name="grade" value="10">10th Grade</label>
+                    <label><input type="radio" name="grade9" value="9">9th Grade</label><br>
+                    <label><input type="radio" name="grade10" value="10">10th Grade</label><br>
+                    <label><input type="radio" name="grade11" value="11">11th Grade</label><br>
+                    <label><input type="radio" name="grade12" value="12">12th Grade</label>
                     
                 </td>
             </tr>
 
+            <!-- Checkboxes -->
+
+            <tr>
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="grade9" value="9">9th Grade</label><br>
+                    <label><input type="checkbox" name="grade10" value="10">10th Grade</label><br>
+                    <label><input type="checkbox" name="grade11" value="11">11th Grade</label><br>
+                    <label><input type="checkbox" name="grade12" value="12">12th Grade</label>
+                </td>
+            </tr>
+
             <!-- Select (Drop Down) -->
-
-
+            
+            <tr>
+                <td>Favorite Sports</td>
+                <td>
+                    <label for="sports">Select:</label>
+                    <select name="sports" id="sports">
+                        <option value="none" selected disabled>Select a sport</option>
+                        <option value="soccer">Soccer</option>
+                        <option value="baseball">Baseball</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="no-sports">None</option>
+                    </select>
+                </td>
+            </tr>
         </table>
+        <!-- <input type="submit" value="Submit"> -->
+
+        <button type="submit" id="submit">Submit</button>
+        <br><br><br>
+        <button type="reset">Clear Form</button>
     </form>
 </body>
 </html>
