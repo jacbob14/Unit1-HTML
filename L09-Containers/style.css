@@ -1,0 +1,96 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #c9c9c9;
+}
+
+/* ID Selectors - use # */
+#main-header {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#main-content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Class Selectors - use . */
+.card {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.highlight {
+     background-color: yellow;
+     font-weight: bold;
+}
+
+.price {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.badge {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.card {
+    width: 700px;
+}
+
+.cart {
+    float: right;
+    width: 585px;
+}
+
+.pork-float {
+    float: left;
+    
+}
+
+.airpods {
+    clear: both;
+}
