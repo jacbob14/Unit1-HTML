@@ -8,11 +8,11 @@
 </head>
 <body>
     <!-- <div id="main-header"></div> -->
-     <div id="main-header">
+    <div id="main-header">
         <h1>Tech Market</h1>
-     </div>
+    </div>
 
-     <div id="main-content">
+    <div id="main-content">
         
         <div class="card pork-float">
             <h2>John Pork</h2>
@@ -26,27 +26,36 @@
         
         <div class="card cart">
             <h2>Your Cart</h2>
-            <ul>
-                <li>testing</li>
-            </ul>
+            <table id="cart-items">
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                
+            </table>
+            <ul id="cart-ul"></ul>
+            <button id="clear_cart" class="btn btn-primary" onclick="clearCart()">Clear Cart</button>
         </div>
-
+        
         <div class="card airpods">
             <h2>AirPods</h2>
             <img src="airpods.jpeg" alt="Airpods">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, minima?
             </p>
-            <p>Price <span class="price">$249</span> <span class="badge">New Arrival</span> <button class="btn btn-primary">Add to Cart</button onclick="cart()"></p>
+            <p>Price <span class="price">$249</span> <span class="badge">New Arrival</span> <button class="btn btn-primary" onclick="cartAppend('AirPods', 249)">Add to Cart</button></p>
         </div>
 
         <div class="card">
             <h2>🔥Flash Sale - iPhone 17 Pro Max</h2>
             <img src="iphone17promax.jpeg" alt="">
             <p>Price <span class="price">$1199</span>New!</span><span class="highlight">Sale ends in 2 hours!</span></p>
-            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-primary" onclick="cartAppend('iPhone 17 Pro Max', 1199)">Add to Cart</button>
         </div>
-     </div>
+
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>

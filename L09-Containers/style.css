@@ -94,3 +94,7 @@
 .airpods {
     clear: both;
 }
+
+#cart-items {
+    width: 100%;
+}
